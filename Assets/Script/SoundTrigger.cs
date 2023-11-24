@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class SoundTrigger : MonoBehaviour {
     [SerializeField] AudioSource audioSource;
-    void OnTriggerEnter(Collider collider) {
-        if(collider.tag == "Player")
-            audioSource.Play();
+    [SerializeField] AudioReverbZone reverbZone;
+    void OnTriggerEnter(Collider collision)
+    {
+        if (!collision.CompareTag("Player")) return;
+        reverbZone.gameObject.SetActive(true);
+        audioSource.Play();
     }
 
-    void OnTriggerExxit(Collider collider) {
-        if(collider.tag == "Player")
-            audioSource.Stop();
+    void OnTriggerExit(Collider collision)
+    {
+        if (!collision.CompareTag("Player")) return;
+        audioSource.Stop();
+        reverbZone.gameObject.SetActive(false);
     }
-
 }
