@@ -10,5 +10,6 @@ public class ManorOutStepScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         doorScript.isEnteredMansion = false;
+        doorScript.OnOffWindSounds();
     }
 }

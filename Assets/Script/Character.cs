@@ -115,18 +115,15 @@ public class Character : MonoBehaviour
         {
             if (checkTerrainTextures.texturesValues[0] > 0)
             {
-                Debug.Log("Son d'herbe là");
                 audioSource.PlayOneShot(grassStep[Random.Range(0,5)]);
             }
             if (checkTerrainTextures.texturesValues[2] > 0)
             {
-                Debug.Log("Son de gravelax là");
                 audioSource.PlayOneShot(gravelStep[Random.Range(0,5)]);
             }
         }
         else
         {
-            Debug.Log("Son de manoir là");
             audioSource.PlayOneShot(stoneStep[Random.Range(0,5)]);
         }
         

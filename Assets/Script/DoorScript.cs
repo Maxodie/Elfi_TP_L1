@@ -9,6 +9,7 @@ public class DoorScript : MonoBehaviour
     
     Animator animator;
     CheckTerrainTextures PlayerCheckTerrainTextures;
+    [SerializeField] private List<AudioSource> windAudioSources;
     
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioReverbZone audioReverbZone;
@@ -25,6 +26,7 @@ public class DoorScript : MonoBehaviour
         audioSource.Play();
         animator.SetBool("In", true);
         isEnteredMansion = true;
+        OnOffWindSounds();
     }
 
     private void OnTriggerExit(Collider other)
@@ -33,5 +35,24 @@ public class DoorScript : MonoBehaviour
         animator.SetBool("In", false);
         if (!audioSource.isPlaying)
             audioReverbZone.gameObject.SetActive(false);
+    }
+
+    public void OnOffWindSounds()
+    {
+        if (isEnteredMansion)
+        {
+            foreach (var audioSource in windAudioSources)
+            {
+                audioSource.Stop();
+            }
+        }
+
+        if (!isEnteredMansion)
+        {
+            foreach (var audioSource in windAudioSources)
+            {
+                audioSource.Stop();
+            }
+        }
     }
 }
