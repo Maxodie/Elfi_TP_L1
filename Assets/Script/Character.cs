@@ -10,8 +10,17 @@ public class Character : MonoBehaviour
     float speed, verticalMovement;
     Vector3 direction, directionForward, directionRight, nextDir;
     Animator animator;
+    
+    public CheckTerrainTextures checkTerrainTextures;
+    public DoorScript doorScript;
+
+    public AudioSource audioSource;
+    
     [SerializeField]
-    AudioClip stepSound;
+    public AudioClip[] gravelStep;
+    public AudioClip[] grassStep;
+    public AudioClip[] stoneStep;
+    
 
     // Start is called before the first frame update
     void Awake()
@@ -101,16 +110,25 @@ public class Character : MonoBehaviour
     // Fonction appelée lors de chaque pas grâce à un animation event intégré dans le cycle de marche du personnage
     public void StepSound()
     {
-        // À remplacer lorsque vous intégrerez les sons de pas
-        if (stepSound != null)
+        checkTerrainTextures.GetTerrainTextures();
+        if (!doorScript.isEnteredMansion)
         {
-            GetComponent<AudioSource>().PlayOneShot(stepSound);
+            if (checkTerrainTextures.texturesValues[0] > 0)
+            {
+                Debug.Log("Son d'herbe là");
+                audioSource.PlayOneShot(grassStep[Random.Range(0,5)]);
+            }
+            if (checkTerrainTextures.texturesValues[2] > 0)
+            {
+                Debug.Log("Son de gravelax là");
+                audioSource.PlayOneShot(gravelStep[Random.Range(0,5)]);
+            }
         }
         else
         {
-            Debug.Log("Il faut intégrer l'audioclip dans le script Character !!!");
+            Debug.Log("Son de manoir là");
+            audioSource.PlayOneShot(stoneStep[Random.Range(0,5)]);
         }
-
-
+        
     }
 }

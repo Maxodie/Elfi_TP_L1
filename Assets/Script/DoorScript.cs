@@ -5,7 +5,11 @@ using UnityEngine.Serialization;
 
 public class DoorScript : MonoBehaviour
 {
+    public bool isEnteredMansion = false;
+    
     Animator animator;
+    CheckTerrainTextures PlayerCheckTerrainTextures;
+    
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioReverbZone audioReverbZone;
 
@@ -20,6 +24,7 @@ public class DoorScript : MonoBehaviour
         audioReverbZone.gameObject.SetActive(true);
         audioSource.Play();
         animator.SetBool("In", true);
+        isEnteredMansion = true;
     }
 
     private void OnTriggerExit(Collider other)
