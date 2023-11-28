@@ -3,24 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class KnockPlayer : MonoBehaviour
+public class RockPlayer : MonoBehaviour
 {
 
-    [SerializeField] private List<AudioSource> knockSpeaker;
-    [SerializeField] private List<AudioClip> knockSound;
+    [SerializeField] private List<AudioSource> rockSpeakers;
+    [SerializeField] private List<AudioClip> rockSounds;
     [SerializeField] private float soundOffset;
-    private float countdown;
-
+    
     public RockTrigger rockTrigger;
-    public DoorScript doorScript;
+    private float countdown;
 
     public void Update()
     {
-        if (doorScript.isEnteredMansion && !rockTrigger.isEnteredCave)
+        if (rockTrigger.isEnteredCave)
         {
             if (countdown <= 0f)
             {
-                knockSpeaker[Random.Range(0,knockSpeaker.Count)].PlayOneShot(knockSound[Random.Range(0,4)]);
+                rockSpeakers[Random.Range(0,rockSpeakers.Count)].PlayOneShot(rockSounds[Random.Range(0,rockSounds.Count)]);
                 countdown = soundOffset;
             }
             else
