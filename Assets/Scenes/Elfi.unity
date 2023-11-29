@@ -12333,7 +12333,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 8
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -12341,23 +12341,41 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.125
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -8.0032
+      outSlope: -8.0032
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.20034027
+      value: 0.4548645
+      inSlope: -2.0008
+      outSlope: -2.0008
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.48472595
+      value: 0.15974426
+      inSlope: -0.5002
+      outSlope: -0.5002
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.12505
+      outSlope: -0.12505
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -15792,12 +15810,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSources:
+  - {fileID: 2052379483}
+  - {fileID: 1247613941}
   - {fileID: 2062549155}
   - {fileID: 1928187149}
   - {fileID: 1905711107}
   - {fileID: 843772879}
-  - {fileID: 2052379483}
-  - {fileID: 1247613941}
   - {fileID: 1204483327}
   reverbZone: {fileID: 1696118417}
   soundOffset: 1.2
@@ -18261,7 +18279,7 @@ PrefabInstance:
     - target: {fileID: 4721359256460494217, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721359256460494217, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
@@ -19438,7 +19456,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845477915}
-  m_LocalRotation: {x: -0.053926565, y: 0.9391461, z: -0.17383574, w: -0.29133782}
+  m_LocalRotation: {x: -0.05392656, y: 0.93914604, z: -0.17383577, w: -0.29133776}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19987,7 +20005,7 @@ PrefabInstance:
     - target: {fileID: 4721359256460494217, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4721359256460494217, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
@@ -21807,7 +21825,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -21815,23 +21833,41 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.14285715
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -7.002809
+      outSlope: -7.002809
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.23605457
+      value: 0.4548645
+      inSlope: -1.7507023
+      outSlope: -1.7507023
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.55615455
+      value: 0.14282227
+      inSlope: -0.43767557
+      outSlope: -0.43767557
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.14291406
+      outSlope: -0.14291406
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -25887,8 +25923,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1928187145}
   - {fileID: 2062549151}
+  - {fileID: 1928187145}
   - {fileID: 1540048572}
   - {fileID: 843772875}
   m_Father: {fileID: 543450652746222144}
