@@ -1747,7 +1747,6 @@ GameObject:
   - component: {fileID: 227321964}
   - component: {fileID: 227321963}
   - component: {fileID: 227321962}
-  - component: {fileID: 227321965}
   m_Layer: 0
   m_Name: DOOR-TO-BASEMENT
   m_TagString: Untagged
@@ -1822,25 +1821,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &227321965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227321960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8ded56c140bdbb42a2e27aa9abf2616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSources:
-  - {fileID: 2062549155}
-  - {fileID: 1928187149}
-  - {fileID: 1905711107}
-  - {fileID: 843772879}
-  reverbZone: {fileID: 1696118417}
-  soundOffset: 0
 --- !u!1 &300435835
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,8 +2258,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331533681}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.476986, y: 15.022945, z: -94.881744}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2842674, y: 1.9093666, z: -0.6309662}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2289,8 +2269,8 @@ Transform:
   - {fileID: 936858830}
   - {fileID: 1234392004}
   - {fileID: 740227919}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 1563598242}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331880719
 GameObject:
@@ -2954,12 +2934,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415769335}
   m_LocalRotation: {x: -0, y: -0.7071065, z: -0, w: 0.7071072}
-  m_LocalPosition: {x: -15.86, y: 0.057, z: -10.33}
-  m_LocalScale: {x: 18.64711, y: 1, z: 5.0777}
+  m_LocalPosition: {x: 14.332719, y: -13.056579, z: 83.92078}
+  m_LocalScale: {x: 18.64711, y: 1, z: 5.0776997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1563598242}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &415769342
 MonoBehaviour:
@@ -4979,7 +4959,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666034131}
-  m_LocalRotation: {x: -0.05392656, y: 0.93914604, z: -0.17383577, w: -0.29133776}
+  m_LocalRotation: {x: -0.053926565, y: 0.9391461, z: -0.17383574, w: -0.29133782}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6276,7 +6256,6 @@ GameObject:
   - component: {fileID: 828245349}
   - component: {fileID: 828245348}
   - component: {fileID: 828245347}
-  - component: {fileID: 828245346}
   - component: {fileID: 828245345}
   m_Layer: 0
   m_Name: CAVE SFX OUT TRIGGER
@@ -6298,19 +6277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rockTrigger: {fileID: 1607450237}
---- !u!114 &828245346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 828245344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8ded56c140bdbb42a2e27aa9abf2616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSources:
+  ambiantAudioSources:
   - {fileID: 2062549155}
   - {fileID: 1928187149}
   - {fileID: 1905711107}
@@ -6319,8 +6286,6 @@ MonoBehaviour:
   - {fileID: 1247613941}
   - {fileID: 1204483327}
   - {fileID: 1710600081}
-  reverbZone: {fileID: 1696118417}
-  soundOffset: 1.2
 --- !u!65 &828245347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6391,13 +6356,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828245344}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.67, y: 12.526, z: -102.53}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5227184, y: -0.5875788, z: -8.279221}
   m_LocalScale: {x: 1, y: 5.1394, z: 3.5275}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 1563598242}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &831378395
 GameObject:
@@ -6613,8 +6578,93 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
+      propertyPath: rolloffMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].time
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
+      value: 0.32810974
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 0.3871765
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inSlope
+      value: -4.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -1.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].inSlope
+      value: -0.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outSlope
+      value: -4.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -1.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].outSlope
+      value: -0.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outWeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721359256460494217, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
@@ -7339,7 +7389,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886142440}
-  m_LocalRotation: {x: 0.08478836, y: 0.87008417, z: -0.1610524, w: 0.45806834}
+  m_LocalRotation: {x: 0.08478835, y: 0.8700842, z: -0.1610524, w: 0.45806834}
   m_LocalPosition: {x: 4.2767196, y: 3.9, z: -3.0520937}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11366,9 +11416,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -11376,23 +11426,95 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.002
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -500.20065
+      outSlope: -500.20065
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.004
+      value: 0.5
+      inSlope: -125.05016
+      outSlope: -125.05016
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.008
+      value: 0.25
+      inSlope: -31.26254
+      outSlope: -31.26254
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.016
+      value: 0.125
+      inSlope: -7.815635
+      outSlope: -7.815635
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.032
+      value: 0.0625
+      inSlope: -1.9539088
+      outSlope: -1.9539088
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.064
+      value: 0.03125
+      inSlope: -0.4884772
+      outSlope: -0.4884772
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.128
+      value: 0.015625
+      inSlope: -0.1221193
+      outSlope: -0.1221193
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.256
+      value: 0.0078125
+      inSlope: -0.030529825
+      outSlope: -0.030529825
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.512
+      value: 0.00390625
+      inSlope: -0.0076324563
+      outSlope: -0.0076324563
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.002000801
+      outSlope: -0.002000801
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -11512,12 +11634,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204483326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.91, y: -0.043, z: -63.755}
+  m_LocalPosition: {x: -16.91, y: -4.64, z: -63.755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1207460597
 GameObject:
@@ -11588,7 +11710,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207460597}
-  m_LocalRotation: {x: -0.05392656, y: 0.93914604, z: -0.17383577, w: -0.29133776}
+  m_LocalRotation: {x: -0.053926565, y: 0.9391461, z: -0.17383574, w: -0.29133782}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13576,7 +13698,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344640917}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15021,8 +15143,93 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
+      propertyPath: rolloffMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].time
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
+      value: 0.32430267
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
+      value: 0.9961853
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 0.36462402
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inSlope
+      value: -4.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -1.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].inSlope
+      value: -0.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outSlope
+      value: -4.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -1.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].outSlope
+      value: -0.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outWeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721359256460494217, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
@@ -15386,6 +15593,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557636980}
   m_Mesh: {fileID: -1550514412580984892, guid: 319ae66480004f940a57620263c6e7c5, type: 3}
+--- !u!1 &1563598241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563598242}
+  m_Layer: 0
+  m_Name: TRIGGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1563598242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563598241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30.192719, y: 13.113579, z: -94.25078}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2015589359}
+  - {fileID: 1793689609}
+  - {fileID: 415769341}
+  - {fileID: 1607450236}
+  - {fileID: 828245350}
+  - {fileID: 331533682}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1577935024
 GameObject:
   m_ObjectHideFlags: 0
@@ -15889,13 +16133,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607450231}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.07, y: 12.537, z: -102.53}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.122719, y: -0.5765791, z: -8.279221}
   m_LocalScale: {x: 1, y: 3.5343, z: 3.5275}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1563598242}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1607450237
 MonoBehaviour:
@@ -18051,7 +18295,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1710600086
 MonoBehaviour:
@@ -18273,8 +18517,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
+      propertyPath: rolloffMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].time
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
+      value: 0.3319397
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
+      value: 0.9885559
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 0.34768677
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inSlope
+      value: -4.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -1.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].inSlope
+      value: -0.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outSlope
+      value: -4.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -1.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].outSlope
+      value: -0.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outWeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721359256460494217, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
@@ -19052,13 +19376,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793689603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.86, y: 0.057, z: 6.57}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.332719, y: -13.056579, z: 100.82078}
   m_LocalScale: {x: 31.691753, y: 1, z: 5.0777}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1563598242}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1793689610
 MonoBehaviour:
@@ -19994,13 +20318,93 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
+      propertyPath: rolloffMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].time
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
+      value: 0.3166504
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 0.31948853
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inSlope
+      value: -4.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -1.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].inSlope
+      value: -0.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outSlope
+      value: -4.0016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -1.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].outSlope
+      value: -0.2501
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956778981258300174, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outWeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721359256460494217, guid: 3e6c3aa7d6267374c9ce4df6f5acd256,
         type: 3}
@@ -21262,13 +21666,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015589354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.71, y: 11.74, z: -78.76687}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5172806, y: -1.373579, z: 15.48391}
   m_LocalScale: {x: 7.014974, y: 0.42065468, z: 0.90277}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1563598242}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2025169942
 GameObject:

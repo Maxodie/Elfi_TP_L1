@@ -51,7 +51,7 @@ public class DoorScript : MonoBehaviour
         {
             foreach (var audioSource in windAudioSources)
             {
-                audioSource.Stop();
+                audioSource.Play();
             }
         }
     }
